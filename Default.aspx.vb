@@ -6,8 +6,7 @@ Partial Class _Default
         ' Declare a variable
         Dim searchWord As String
         ' Set the variable equal to the SQL statement to perform the search
-        searchWord = "Select * From Tools where (toolName Like '%" _
-        + tbTool.Text.ToString() + "%')"
+        searchWord = "Select * From Table where (tbTool Like '%" + tbTool.Text.ToString() + "%')"
         ' Apply the variable (SQL statement) to the data source
         SqlDataSource1.SelectCommand = searchWord
 

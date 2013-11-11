@@ -10,6 +10,13 @@
 
     <link rel="stylesheet" type="text/css" href="./StyleSheet.css" />
 
+    <style type="text/css">
+        .auto-style6 {
+            margin-left: 0px;
+            text-align: center;
+        }
+    </style>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -17,12 +24,12 @@
     <div id="header">
         <asp:Image class="image2" ID="Image2" runat="server" ImageUrl="~/logo/PGA_LOGO_31673354_std.jpg" />
         PGA's Player Database 
-        <asp:Image class="image" ID="Image1" runat="server" ImageUrl="~/logo/PGA_LOGO_31673354_std.jpg" />
+        <asp:Image class="image" ID="Image" runat="server" ImageUrl="~/logo/PGA_LOGO_31673354_std.jpg" />
        
          
        
          </div>
-      <div id="h3"> Please Search the Database </div>
+        <h3 class="auto-style6"><a href="default.aspx">Home</a>|<a href="addplayers.aspx">Add Players</a>|<a href="About.aspx">About US</a>|<a href="Contact.aspx">Contact US</a></h3>
      <div id="mainbody">
   
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">

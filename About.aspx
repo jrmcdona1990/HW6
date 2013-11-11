@@ -2,14 +2,24 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+ 
+    <style type="text/css">
+        .auto-style1 {
+            text-align: left;
+        }
+        .auto-style2 {
+            text-decoration: underline;
+        }
+    </style>
 </asp:Content>
     
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <link rel="stylesheet" type="text/css" href="./StyleSheet.css" />
-   <h3> About US </h3>
+   <h2 class="auto-style2" style="text-align: center"> About US </h2>
 
-    <div id="bodyaboutus">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
+    <div class="bodyaboutus">
+<p class="auto-style1">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
 aliquet, tellus sit amet feugiat euismod, velit lectus 
 pellentesque nisi, non eleifend quam ipsum at arcu. Sed 
 semper mi a tristique porttitor. Morbi rhoncus diam dui, a 
@@ -21,7 +31,7 @@ placerat quis eu nibh. In hac habitasse platea dictumst.
 
     </p>
 
-<p>
+<p class="auto-style1">
     Etiam vel lorem nec justo suscipit ornare. Sed risus urna, 
 gravida nec convallis eu, viverra nec sem. Sed eget mauris 
 magna. Sed vulputate tortor in tempus fringilla. Donec in 
