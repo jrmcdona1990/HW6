@@ -1,0 +1,61 @@
+﻿#container {
+    background: black;
+    padding:20px;
+  
+    margin:0 auto;
+    border:5px solid black;
+    width:900px;
+}
+
+#header {
+    font: bold small-caps 3.5em/1.5em verdana,sans-serif;
+    background-position: top center;
+    background: yellow;
+    color: black;
+    margin: 0 auto;
+    border: 5px solid black;
+    text-align:center;
+    width:auto;
+}
+
+#mainbody {
+    background: yellow;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px dashed yellow;
+    border-right:1px solid black;
+    width: 885px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    background: yellow;
+    color: black;
+    padding: 5px;
+    margin: 0 auto;
+    border: 1px solid black;
+    font-size:12px;
+    text-align:center;
+}
+#h3 {
+     color: black;
+     font: bold, sans-serif, 20px;
+     text-align: center;
+}
+
+#bodyaboutus {
+    text-align:center;
+    width: auto;
+    margin-left:auto;
+    margin-right:auto;
+   
+}
+
+.image {
+    float: right;
+    height:82px;
+    width:82px;
+    padding:1px;
+    
+}
