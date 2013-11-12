@@ -83,9 +83,8 @@
 
 <PagerStyle CssClass="pgr"></PagerStyle>
         </asp:DetailsView>
+         <span class="auto-style8"><strong style="text-align: center">&nbsp;&nbsp;&nbsp;&nbsp; </strong></span><strong style="text-align: center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>
          </p>
-    <h3 class="auto-style7">&nbsp;</h3>
-    <h3 class="auto-style7"><span class="auto-style8"><strong style="text-align: center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></span><strong style="text-align: center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></h3>
 
 </asp:Content>
 
