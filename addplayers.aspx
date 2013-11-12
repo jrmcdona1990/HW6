@@ -21,20 +21,11 @@
 
     <span style="text-align: center">
 
-    <h2 class="auto-style11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style8"><span style="text-align: center"><span class="auto-style9"><span class="auto-style10">Edit Player Profiles</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></h2>
+    <h2 class="auto-style11"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style8"><span style="text-align: center"><span class="auto-style9"><span class="auto-style10">Player Profiles</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></h2>
      <p class="auto-style7">
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Table] WHERE [Id] = @original_Id AND [FirstName ] = @original_FirstName_ AND [LastName] = @original_LastName AND [HomeTown] = @original_HomeTown AND [DateOfPlay] = @original_DateOfPlay AND (([Earnings] = @original_Earnings) OR ([Earnings] IS NULL AND @original_Earnings IS NULL)) AND (([CutsMade] = @original_CutsMade) OR ([CutsMade] IS NULL AND @original_CutsMade IS NULL)) AND (([Wins] = @original_Wins) OR ([Wins] IS NULL AND @original_Wins IS NULL)) AND (([HighFinish] = @original_HighFinish) OR ([HighFinish] IS NULL AND @original_HighFinish IS NULL)) AND (([TournamentsPlayed] = @original_TournamentsPlayed) OR ([TournamentsPlayed] IS NULL AND @original_TournamentsPlayed IS NULL))" InsertCommand="INSERT INTO [Table] ([FirstName ], [LastName], [HomeTown], [DateOfPlay], [Earnings], [CutsMade], [Wins], [HighFinish], [TournamentsPlayed]) VALUES (@FirstName_, @LastName, @HomeTown, @DateOfPlay, @Earnings, @CutsMade, @Wins, @HighFinish, @TournamentsPlayed)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Table]" UpdateCommand="UPDATE [Table] SET [FirstName ] = @FirstName_, [LastName] = @LastName, [HomeTown] = @HomeTown, [DateOfPlay] = @DateOfPlay, [Earnings] = @Earnings, [CutsMade] = @CutsMade, [Wins] = @Wins, [HighFinish] = @HighFinish, [TournamentsPlayed] = @TournamentsPlayed WHERE [Id] = @original_Id AND [FirstName ] = @original_FirstName_ AND [LastName] = @original_LastName AND [HomeTown] = @original_HomeTown AND [DateOfPlay] = @original_DateOfPlay AND (([Earnings] = @original_Earnings) OR ([Earnings] IS NULL AND @original_Earnings IS NULL)) AND (([CutsMade] = @original_CutsMade) OR ([CutsMade] IS NULL AND @original_CutsMade IS NULL)) AND (([Wins] = @original_Wins) OR ([Wins] IS NULL AND @original_Wins IS NULL)) AND (([HighFinish] = @original_HighFinish) OR ([HighFinish] IS NULL AND @original_HighFinish IS NULL)) AND (([TournamentsPlayed] = @original_TournamentsPlayed) OR ([TournamentsPlayed] IS NULL AND @original_TournamentsPlayed IS NULL))">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Table] WHERE [Id] = @original_Id" InsertCommand="INSERT INTO [Table] ([FirstName ], [LastName], [HomeTown], [DateOfPlay], [Earnings], [CutsMade], [Wins], [HighFinish], [TournamentsPlayed]) VALUES (@FirstName_, @LastName, @HomeTown, @DateOfPlay, @Earnings, @CutsMade, @Wins, @HighFinish, @TournamentsPlayed)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Table] WHERE ([Id] = @Id)" UpdateCommand="UPDATE [Table] SET [FirstName ] = @FirstName_, [LastName] = @LastName, [HomeTown] = @HomeTown, [DateOfPlay] = @DateOfPlay, [Earnings] = @Earnings, [CutsMade] = @CutsMade, [Wins] = @Wins, [HighFinish] = @HighFinish, [TournamentsPlayed] = @TournamentsPlayed WHERE [Id] = @original_Id">
             <DeleteParameters>
                 <asp:Parameter Name="original_Id" Type="Int32" />
-                <asp:Parameter Name="original_FirstName_" Type="String" />
-                <asp:Parameter Name="original_LastName" Type="String" />
-                <asp:Parameter Name="original_HomeTown" Type="String" />
-                <asp:Parameter Name="original_DateOfPlay" Type="String" />
-                <asp:Parameter Name="original_Earnings" Type="String" />
-                <asp:Parameter Name="original_CutsMade" Type="Int32" />
-                <asp:Parameter Name="original_Wins" Type="Int32" />
-                <asp:Parameter Name="original_HighFinish" Type="Int32" />
-                <asp:Parameter Name="original_TournamentsPlayed" Type="Int32" />
             </DeleteParameters>
             <InsertParameters>
                 <asp:Parameter Name="FirstName_" Type="String" />
@@ -47,6 +38,9 @@
                 <asp:Parameter Name="HighFinish" Type="Int32" />
                 <asp:Parameter Name="TournamentsPlayed" Type="Int32" />
             </InsertParameters>
+            <SelectParameters>
+                <asp:QueryStringParameter Name="Id" QueryStringField="Id" Type="Int32" />
+            </SelectParameters>
             <UpdateParameters>
                 <asp:Parameter Name="FirstName_" Type="String" />
                 <asp:Parameter Name="LastName" Type="String" />
@@ -58,18 +52,9 @@
                 <asp:Parameter Name="HighFinish" Type="Int32" />
                 <asp:Parameter Name="TournamentsPlayed" Type="Int32" />
                 <asp:Parameter Name="original_Id" Type="Int32" />
-                <asp:Parameter Name="original_FirstName_" Type="String" />
-                <asp:Parameter Name="original_LastName" Type="String" />
-                <asp:Parameter Name="original_HomeTown" Type="String" />
-                <asp:Parameter Name="original_DateOfPlay" Type="String" />
-                <asp:Parameter Name="original_Earnings" Type="String" />
-                <asp:Parameter Name="original_CutsMade" Type="Int32" />
-                <asp:Parameter Name="original_Wins" Type="Int32" />
-                <asp:Parameter Name="original_HighFinish" Type="Int32" />
-                <asp:Parameter Name="original_TournamentsPlayed" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:DetailsView 
+        &nbsp;&nbsp;&nbsp;<asp:DetailsView 
             ID="DetailsView1" 
             runat="server" 
             AllowPaging="True" 
@@ -82,6 +67,7 @@
             CssClass="cssgridview"
             AlternatingRowStyle-CssClass="alt"
             PagerStyle-CssClass="pgr">
+<AlternatingRowStyle CssClass="alt"></AlternatingRowStyle>
             <Fields>
                 <asp:BoundField DataField="FirstName " HeaderText="First Name " SortExpression="FirstName " />
                 <asp:BoundField DataField="LastName" HeaderText="Last Name" SortExpression="LastName" />
@@ -92,8 +78,10 @@
                 <asp:BoundField DataField="Wins" HeaderText="Wins" SortExpression="Wins" />
                 <asp:BoundField DataField="HighFinish" HeaderText="High Finish" SortExpression="HighFinish" />
                 <asp:BoundField DataField="TournamentsPlayed" HeaderText="Tournaments Played" SortExpression="TournamentsPlayed" />
-                <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True" ShowInsertButton="True" />
+                <asp:CommandField ButtonType="Button" ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
+
+<PagerStyle CssClass="pgr"></PagerStyle>
         </asp:DetailsView>
          </p>
     <h3 class="auto-style7">&nbsp;</h3>

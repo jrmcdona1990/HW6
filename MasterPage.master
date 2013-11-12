@@ -12,8 +12,8 @@
 
     <style type="text/css">
         .auto-style6 {
-            margin-left: 0px;
-            text-align: center;
+            margin-left: 120px;
+            text-align: left;
         }
     </style>
 
@@ -29,7 +29,7 @@
          
        
          </div>
-        <h3 class="auto-style6"><a href="default.aspx">Home</a>|<a href="addplayers.aspx">Add Players</a>|<a href="About.aspx">About US</a>|<a href="Contact.aspx">Contact US</a></h3>
+        <h3 class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="default.aspx">Home</a>|<a href="playeredits.aspx">Add Players</a>|<a href="About.aspx">About US</a>|<a href="Contact.aspx">Contact US</a></h3>
      <div id="mainbody">
   
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">

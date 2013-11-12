@@ -40,16 +40,10 @@
             PagerStyle-CssClass="pgr">
 <AlternatingRowStyle CssClass="alt"></AlternatingRowStyle>
             <Columns>
-                <asp:CommandField ButtonType="Button" ShowSelectButton="True" />
                 <asp:BoundField DataField="FirstName " HeaderText="First Name " SortExpression="FirstName " />
                 <asp:BoundField DataField="LastName" HeaderText="Last Name" SortExpression="LastName" />
                 <asp:BoundField DataField="HomeTown" HeaderText="Home Town" SortExpression="HomeTown" />
-                <asp:BoundField DataField="DateOfPlay" HeaderText="Tour Dates" SortExpression="DateOfPlay" />
-                <asp:BoundField DataField="Earnings" HeaderText="Earnings" SortExpression="Earnings" />
-                <asp:BoundField DataField="CutsMade" HeaderText="Cuts Made" SortExpression="CutsMade" />
-                <asp:BoundField DataField="Wins" HeaderText="Wins" SortExpression="Wins" />
-                <asp:BoundField DataField="HighFinish" HeaderText="High Finish" SortExpression="HighFinish" />
-                <asp:BoundField DataField="TournamentsPlayed" HeaderText="Tournaments Played" SortExpression="TournamentsPlayed" />
+                <asp:HyperLinkField DataNavigateUrlFields="Id" DataNavigateUrlFormatString="addplayers.aspx?Id={0}" Text="Player Details " />
             </Columns>
 
 <PagerStyle CssClass="pgr"></PagerStyle>
