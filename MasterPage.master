@@ -37,10 +37,15 @@
         </asp:ContentPlaceHolder>
 
          </div>
-         <p></p>
+         <br />
+
         <div id="footer">
             
-            © 2013 6K:183 Software Design & Development 
+            © 2013 6K:183 Software Design & Development&nbsp;
+            <br />
+&nbsp;
+            <br />
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 
         </div>
 
