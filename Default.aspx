@@ -37,7 +37,7 @@
             Gridlines="None"
             CssClass="cssgridview"
             AlternatingRowStyle-CssClass="alt"
-            PagerStyle-CssClass="pgr">
+            PagerStyle-CssClass="pgr" AllowPaging="True">
 <AlternatingRowStyle CssClass="alt"></AlternatingRowStyle>
             <Columns>
                 <asp:BoundField DataField="FirstName " HeaderText="First Name " SortExpression="FirstName " />
